@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    /*Color for the whole font of body*/
+    color: #39a6b2;
+    font-family: Helvetica, Arial, sans-serif;
+}
+/* apply styles to header*/
+header {
+    padding: 20px 35px;
+    background-color: #39a6b2;
+}
+header h1 {
+    font-weight: bold;
+    font-size: 36px;
+    color: #fce138;
+    margin: 0;
+    display: inline;
+}
+header a {
+    /*text-decoration: Applies underline, strikethrough, or overline styles to the text. 
+    By default, the value is none, so this is usually not something we have to explicitly tell it not to do. 
+    With <a> elements, however, the browser automatically applies a blue color and an underline, 
+    and we don't want our links to look like that.*/
+    text-decoration: none;
+    color: #fce138;
+}
+header nav {
+    /* wraps the text and moves it to the right*/
+    float: right;
+    margin: 7px 0;
+}
+header nav ul li {
+    display: inline;
+}
+header nav ul li a {
+    margin: 0 30px;
+    font-weight: lighter;
+    font-size: 22px;
+}
