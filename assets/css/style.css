@@ -123,6 +123,7 @@ section {
     margin: 0 auto;
 }
 /* end what we do section styling */
+/* start what you do section styling */
 .steps {
     text-align: center;
     background: #fce138;
@@ -159,4 +160,9 @@ section {
 }
 .steps span {
     font-size: 38px;
+}
+/* end what you do section styling */
+/* start meet trainers section styling */
+.trainers {
+    text-align: center;
 }
