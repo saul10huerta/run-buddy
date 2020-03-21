@@ -121,7 +121,7 @@ section {
     width: 80%;
     font-size: 20px;
     margin: 0 auto;
-}
+  }
 /* end what we do section styling */
 /* start what you do section styling */
 .steps {
@@ -130,34 +130,39 @@ section {
 }
 .section-title {
     font-size: 55px;
-    display: inline-block;
-    padding: 0 100px 20px 100px;
-    border-bottom: 3px solid;
-    margin-bottom: 35px;
     color: #024e76;
- }
-.primary-border {
+    margin-bottom: 35px;
+    padding: 0 100px 20px 100px;
+    display: inline-block;
+    border-bottom: 3px solid;
+  }
+  
+  .primary-border {
     border-color: #fce138;
   }
-.secondary-border {
+  
+  .secondary-border {
     border-color: #39a6b2;
   }
-.steps div {
+  .steps div {
     margin-bottom: 80px;
-}
-.steps img {
+  }
+  
+  .steps img {
     width: 15%;
     margin: 10px 0;
-}
-.steps h3 {
+  } 
+  
+  .steps h3 {
     color: #024e76;
     font-size: 46px;
     margin-top: 10px;
-}
-.steps p {
+  }
+  
+  .steps p {
     color: #39a6b2;
     font-size: 23px;
-}
+  }
 .steps span {
     font-size: 38px;
 }
