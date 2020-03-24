@@ -134,29 +134,27 @@ section {
 }
 /* End Hero-form styling */
 /* start what we do section styling */
-.intro {
-    text-align: center;
-}
 .intro p {
     line-height: 1.7;
     color: #39a6b2;
     width: 80%;
     font-size: 20px;
     margin: 0 auto;
+    text-align: center;
   }
 /* end what we do section styling */
 /* start what you do section styling */
 .steps {
-    text-align: center;
     background: #fce138;
 }
 .section-title {
     font-size: 55px;
     color: #024e76;
-    margin-bottom: 35px;
-    padding: 0 100px 20px 100px;
-    display: inline-block;
     border-bottom: 3px solid;
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 0 auto 35px auto;
+    width: 50%;
   }
   
   .primary-border {
@@ -191,7 +189,7 @@ section {
 /* end what you do section styling */
 /* start meet trainers section styling */
 .trainers {
-    text-align: center;
+  
 }
 .trainer {
     width: 900px;
@@ -230,7 +228,6 @@ section {
 }
 /* reach out styles start */
 .contact {
-    text-align: center;
     background: #024e76;
 }
 .contact h2 {
@@ -266,4 +263,7 @@ section {
   
 .contact-info a {
     color: #fce138;
+}
+.flex-row {
+    display: flex;
 }
