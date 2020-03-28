@@ -16,12 +16,23 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-image: url("../images/hero-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-position: 80%;
 }
 header h1 {
     font-weight: bold;
     font-size: 36px;
     color: #fce138;
     margin: 0;
+    /* adding a shadow */
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
 }
 header a {
     /*text-decoration: Applies underline, strikethrough, or overline styles to the text. 
@@ -46,7 +57,17 @@ header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
+    /* adding a shadow */
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+/*pseudo-classes start*/
+header nav ul li a:hover {
+    background: #fce138;
+    color: #024e76;
+    border-radius: 15px;
+    text-shadow: none;
+}
+/*pseudo-classes end*/
 /* footer styling */
 footer {
     background: #fce138;
@@ -81,6 +102,8 @@ section {
     justify-content: center;
     flex-wrap: wrap;
     align-items: flex-start;
+    background-attachment: fixed;
+    background-position: 80%;
 }
 /* End Hero styling */
 /* Start Hero-cta styling */
@@ -96,17 +119,28 @@ section {
     font-style: italic;
     font-size: 55px;
     color: #fce138;
+    /* adding a shadow */
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 /* End Hero-cta styling */
 /* Start Hero-form styling */
 .hero-form {
     color: #024e76;
-    background-color: #fce138;
+    background-color: rgba(252,225,56,0.8);
     padding:20px;
     border: 3px solid  #024e76;
     width: 40%;
     margin: 3.5%;
+    /* adding a shadow */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    /* rounding corners */
+    border-radius: 15px;
 }
+/*pseudo classes start*/
+.hero-form button:hover {
+    background-color: #39a6b2;  
+  }
+/*pseudo classes end*/
 .hero-form h3 {
     font-size: 24px;
     margin: 0px;
@@ -122,7 +156,16 @@ section {
     color: #024e76;
     width: 100%;
     margin-bottom: 15px;
+    /* rounding corners */
+    border-radius: 10px;
+    background-color: rgba(255,255,255, 0.75);
 }
+/*pseudo start*/
+.form-input:focus {
+    background-color: rgba(255,255,255, 1);
+    outline: none;
+  }
+/*pseudo end*/
 .hero-form label {
     margin: 0 5px;
 }
@@ -132,6 +175,8 @@ section {
     padding: 10px 20px;
     font-size: 16px;
     border: none;
+    /* rounding corners */
+    border-radius: 10px;
 }
 /* End Hero-form styling */
 /* start what we do section styling */
@@ -201,12 +246,15 @@ section {
     margin: 50px auto;
     padding-bottom: 50px;
     width: 80%;
-    border-bottom: 1px solid #39a6b2;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
+/*pseudo*/
+.step:not(:last-child) {
+    border-bottom: 1px solid #39a6b2;
+  }
 /* end what you do section styling */
 /* start meet trainers section styling */
 .trainers {
@@ -332,7 +380,17 @@ section {
     width: 100%;
     margin-bottom: 15px;
     margin-top: 5px;
+    /* rounding corners */
+    border-radius: 10px;
+    /*for pseudo effect */
+    background-color: rgba(255,255,255, 0.75);
 }
+/*pseudo start*/
+.contact-form input:focus, .contact-form textarea:focus {
+    background-color: rgba(255,255,255, 1);
+    outline: none;
+  } 
+/*pseudo end*/
 .contact-form button {
     width: 100%;
     border: none;
@@ -341,7 +399,15 @@ section {
     text-align: center;
     padding: 15px 0;
     font-size: 16px;
+    /* rounding corners */
+    border-radius: 10px;
 }
+/*pseudo start*/
+.contact-form button:hover {
+    color: #fce138;
+    background: #39a6b2;
+  }
+/*pseudo end*/
 .contact-info a {
     color: #fce138;
 }
@@ -363,6 +429,7 @@ section {
    header {
        padding-bottom: 0;
        justify-content: center;
+       position: relative;
    }
    header h1 {
        width: 100%;
